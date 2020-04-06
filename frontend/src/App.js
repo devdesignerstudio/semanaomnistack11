@@ -1,25 +1,26 @@
+//import React, { useState } from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.css';
+//import Header from './Header';
+//JSX Javascript XML
+//import Logon from './pages/Logon'; //o arquivo index é procurado automaticamente em qualquer diretório
+import Routes from './routes';
 
 function App() {
+  //const [contador, setContador] = useState(0); //array [valor,funcaoAtualizacaoDesseValor]
+
+  //function incrementa(){
+   // setContador( contador + 1);
+    //console.log(contador);
+  //}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
+   //<Header title='Semana OmniStack'/>
+   //<div>
+   //  <Header>Contador: {contador}</Header>
+  //<button onClick={incrementa}>Incrementar</button>
+  // </div>
   );
 }
 
